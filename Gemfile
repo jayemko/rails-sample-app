@@ -20,6 +20,11 @@ gem 'jquery-rails', '2.2.1'
 gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 
+group :production do
+  gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
+end
+
 group :doc do
   gem 'sdoc', '0.3.20', require: false
 end
